@@ -1,0 +1,31 @@
+{
+  "model_type": "VotingClassifier (XGBoost + Random Forest)",
+  "features": [
+    "mean_amplitude",
+    "max_amplitude",
+    "min_amplitude",
+    "std_amplitude",
+    "amplitude_range",
+    "median_amplitude",
+    "crank_angle_at_max",
+    "sample_count",
+    "elevated_percentage",
+    "mean_to_max_ratio",
+    "baseline_median",
+    "medium_activity_pct",
+    "smear_index",
+    "continuity_ratio",
+    "spike_concentration",
+    "baseline_elevation",
+    "iqr_score"
+  ],
+  "n_features": 17,
+  "training_samples": 69,
+  "training_accuracy": 1.0,
+  "voting": "soft",
+  "weights": [
+    0.6,
+    0.4
+  ],
+  "note": "Pure AI ensemble - no hard-coded rules. AI learns pattern thresholds from data."
+}
